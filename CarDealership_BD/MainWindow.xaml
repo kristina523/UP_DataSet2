@@ -1,0 +1,29 @@
+﻿<Window x:Class="CarDealership_BD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarDealership_BD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="page1" Grid.Column="0" Content="Клиенты" Margin="0,0,0,10" Click="page1_Click"/>
+        <Button x:Name="page2" Grid.Column="1" Content="Машины" Margin="0,0,0,10" Click="page2_Click"/>
+        <Button x:Name="page3" Grid.Column="2" Content="Модель" Margin="0,0,0,10" Click="page3_Click"/>
+        <Button x:Name="page4" Grid.Column="3" Content="Бренд" Margin="0,0,0,10" Click="page4_Click"/>
+        <Button x:Name="page5" Grid.Column="4" Content="Заказы" Margin="0,0,0,10" Click="page5_Click"/>
+        <Frame x:Name="PageFrame" Grid.ColumnSpan="5" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
